@@ -19,7 +19,7 @@ This project features a comprehensive 4-page Power BI dashboard designed to help
 
 ### 1. Navigation Home Page
 Designed for a seamless user experience, allowing stakeholders to jump to specific analytical deep-dives.
-![Home Page](./Assets/01_Home_Navigation.jpg)
+![Home Page](./Assets/01_Home_Navigation.png)
 
 ### 2. Executive Overview
 A high-level summary of attrition rates, headcount distribution, and salary brackets.
