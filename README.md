@@ -6,6 +6,15 @@ This project features a comprehensive 4-page Power BI dashboard designed to help
 
 ---
 
+## 🚀  Documentation & Quick Links
+
+* 📊 **[Download Power BI Dashboard (.pbix)](Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pbix)** - *Requires Power BI Desktop to view data model and DAX*
+* 📄 **[Download Project Summary (PDF)](Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pdf)** - *A comprehensive report of insights and methodology*
+* 💻 **[View SQL Scripts](Sql_Scripts/Gold_Layer_Views.sql)** - *Database views and transformation logic*
+* 🗄️ **[Source Data (.csv)](Source_Data/HR-Employee-Attrition.csv)**
+
+  ---
+  
 ## 🖥️ Dashboard Preview
 
 ### 1. Navigation Home Page
