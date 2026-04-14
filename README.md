@@ -7,12 +7,12 @@ This project features a comprehensive 4-page Power BI dashboard designed to help
 
 ---
 
-## 🚀 Live Demo & Documentation
+## 🚀  Documentation
 
-Project File: [Link to .pbix]
-
-Full Report: [Link to PDF]
-
+* 📊 **[Download Power BI Dashboard (.pbix)](Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pbix)** - *Requires Power BI Desktop to view data model and DAX*
+* 📄 **[Download Project Summary (PDF)](Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pdf)** - *A comprehensive report of insights and methodology*
+* 💻 **[View SQL Scripts](Sql_Scripts/Gold_Layer_Views.sql)** - *Database views and transformation logic*
+* 🗄️ **[Source Data (.bak)](AdventureWorks2025_Source/AdventureWorksDW2025.bak)** - *(24.1 MB)*
 ---
 
 ## 🛠️ Technical Implementation
