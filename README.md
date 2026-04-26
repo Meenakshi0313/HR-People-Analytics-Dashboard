@@ -42,7 +42,12 @@ I developed a robust **Star Schema** to optimize report performance and ensure d
 * **Fact Table**: `v_FactHRPerformance` containing core metrics.
 * **Dimension Tables**: `v_DimEmployeeDetails`, `v_DimJobDetails`, and `v_DimSatisfaction`.
 
-![Data Model](./Assets/Data-Model.png)
+<details>
+<summary>📸 Click here to view the Star Schema Diagram</summary>
+
+![Star Schema Data Model](Assets/Data-Model.png)
+
+</details>
 
 ### 2. Advanced DAX & Power Query
 * **Custom Sorting**: Solved alphabetical sorting issues for qualitative data (e.g., Work-Life Balance: Poor $\rightarrow$ Best) by creating a **Conditional Column Index** in Power Query to break circular dependencies.
