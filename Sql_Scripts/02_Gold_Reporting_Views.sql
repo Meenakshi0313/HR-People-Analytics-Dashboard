@@ -25,6 +25,10 @@ CREATE OR ALTER VIEW v_FactHRPerformance AS
 SELECT 
     EmployeeNumber AS [Employee Number],
     Attrition AS [Attrition Flag],
+    CASE 
+        WHEN Attrition = 1 THEN 'Yes'
+        ELSE 'No'
+    END AS [Attrition Status],
     MonthlyIncome AS [Monthly Income],
     CASE 
         WHEN MonthlyIncome < 3000 THEN 'Entry (<$3k)'
