@@ -21,7 +21,7 @@ Click on any module below to view the high-resolution preview directly from the 
 
 | Module | Analytical Focus | High-Res Preview |
 | :--- | :--- | :--- |
-| **01. Home Page** | Global Navigation & Entry Point | [🖼️ View](./Assets/01_Command-Center.png) |
+| **01. Home Page** | Global Navigation & Entry Point | [🖼️ View](./Assets/01_Home-Navigation.png) |
 | **02. Executive Overview** | C-Suite Financial & Pareto Health | [🖼️ View](./Assets/02_Executive-Overview.png) |
 | **03. Demographics Diversity** | Unit Contribution & Price Erosion | [🖼️ View](./Assets/03_Demographics_Diversity.png) |
 | **04. Sentiment Performance** | Demographic & Income Distribution | [🖼️ View](./Assets/04_Sentiment_Performance.png) |
@@ -30,7 +30,7 @@ Click on any module below to view the high-resolution preview directly from the 
   <summary>📸 **Click here to expand and view all screenshots in-line**</summary>
 
   ### 01. Home Page
-  ![Home Page](./Assets/01_Home-Page.png)
+  ![Home Navigation](./Assets/01_Home-Navigation.png)
 
   ### 02. Executive Overview
   ![Executive Overview](./Assets/02_Executive-Overview.png)
@@ -48,6 +48,8 @@ Click on any module below to view the high-resolution preview directly from the 
 To ensure scalability and performance, I implemented a Gold Layer architecture:
 
 - **Data Modeling:** Designed a Star Schema to optimize query performance and ensure clean relationship management between Fact and Dimension tables.
+
+  ![Data Model](./Assets/Data-Model.png)
 
 - **SQL Engineering:** Developed a suite of T-SQL Views to handle complex business logic (e.g., Burnout Risk flags, Performance Status mapping, and Compensation Tiers) at the database level.
 
@@ -98,3 +100,8 @@ To ensure scalability and performance, I implemented a Gold Layer architecture:
 ## Tools Used: 
 
 SQL (T-SQL), Power BI, DAX
+
+---
+
+**Author:** Meenakshi Singh  
+*Data Analyst | SQL Engineering | Power BI Architecture*
