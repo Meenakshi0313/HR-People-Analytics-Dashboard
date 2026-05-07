@@ -1,8 +1,9 @@
-# HR People Analytics: Strategic Workforce Insights
+# IBM HR Analytics: Strategic Workforce Insights Dashboard
 
 
-## 📋 Project Overview
-This project features a comprehensive 4-page Power BI dashboard designed to help HR leadership understand employee turnover (attrition) and workforce health. By analyzing the **IBM HR Analytics dataset**, this dashboard identifies the key drivers behind employee departures and provides actionable insights for improving retention.
+## 📌 Project Overview
+
+This project transforms raw transactional HR data into a multi-page executive BI suite. The goal is to move beyond simple headcount reporting to identify the root causes of attrition, quantify the financial impact ($7M replacement cost), and provide actionable insights for retaining Top Talent.
 
 ---
 
@@ -14,71 +15,86 @@ This project features a comprehensive 4-page Power BI dashboard designed to help
 * 📁 **[Download Raw Dataset (.csv)](Source_Data/HR-Employee-Attrition.csv)**
 
   ---
-  
-## 🖥️ Dashboard Preview
 
-### 1. Navigation Home Page
-Designed for a seamless user experience, allowing stakeholders to jump to specific analytical deep-dives.
-![Home Page](./Assets/01_Home_Navigation.png)
+  ## 🖥️ Interactive Dashboard Suite
+Click on any module below to view the high-resolution preview directly from the assets folder.
 
-### 2. Executive Overview
-A high-level summary of attrition rates, headcount distribution, and salary brackets.
-![Executive Overview](./Assets/02_Executive_Overview.png)
-
-### 3. Demographics & Diversity
-A deep dive into age groups, education fields, and commute distances to identify high-risk profiles.
-![Demographics](./Assets/03_Demographics_Diversity.png)
-
-### 4. Employee Sentiment & Performance
-Analyzes the "human" element—linking job satisfaction, work-life balance, and stock options to retention.
-![Sentiment Analysis](./Assets/04_Sentiment_Performance.png)
-
----
-
-## 🛠️ Technical Implementation
-
-### 1. Data Modeling (Star Schema)
-I developed a robust **Star Schema** to optimize report performance and ensure data integrity. This structure allows for complex filtering across multiple dimensions without sacrificing speed.
-* **Fact Table**: `v_FactHRPerformance` containing core metrics.
-* **Dimension Tables**: `v_DimEmployeeDetails`, `v_DimJobDetails`, and `v_DimSatisfaction`.
+| Module | Analytical Focus | High-Res Preview |
+| :--- | :--- | :--- |
+| **01. Home Page** | Global Navigation & Entry Point | [🖼️ View](./Assets/01_Command-Center.png) |
+| **02. Executive Overview** | C-Suite Financial & Pareto Health | [🖼️ View](./Assets/02_Executive-Overview.png) |
+| **03. Demographics Diversity** | Unit Contribution & Price Erosion | [🖼️ View](./Assets/03_Demographics_Diversity.png) |
+| **04. Sentiment Performance** | Demographic & Income Distribution | [🖼️ View](./Assets/04_Sentiment_Performance.png) |
 
 <details>
-<summary>📸 Click here to view the Star Schema Diagram</summary>
+  <summary>📸 **Click here to expand and view all screenshots in-line**</summary>
 
-![Star Schema Data Model](Assets/Data-Model.png)
+  ### 01. Home Page
+  ![Home Page](./Assets/01_Home-Page.png)
 
-</details>
+  ### 02. Executive Overview
+  ![Executive Overview](./Assets/02_Executive-Overview.png)
 
-### 2. Advanced DAX & Power Query
-* **Custom Sorting**: Solved alphabetical sorting issues for qualitative data (e.g., Work-Life Balance: Poor $\rightarrow$ Best) by creating a **Conditional Column Index** in Power Query to break circular dependencies.
-* **Dynamic Measures**: Created measures for Attrition Rate %, Average Monthly Income, and Job Involvement Scores to provide real-time KPIs.
+  ### 03. Demographics Diversity
+  ![Demographics Diversity](./Assets/03_Demographics_Diversity.png)
 
-### 3. UI/UX Optimization
-* **Descriptive Titles**: Updated charts with insight-driven titles like "Attrition Risk by Commute Distance" to provide immediate value to the reader.
-* **Interactive Navigation**: Implemented button-based navigation and slicer resets to make the report feel like a native application.
+  ### 04. Sentiment Performance
+  ![Sentiment Performance](./Assets/04_Sentiment_Performance.png)
+  
+---
+
+## 🏗️ Technical Architecture
+
+To ensure scalability and performance, I implemented a Gold Layer architecture:
+
+- **Data Modeling:** Designed a Star Schema to optimize query performance and ensure clean relationship management between Fact and Dimension tables.
+
+- **SQL Engineering:** Developed a suite of T-SQL Views to handle complex business logic (e.g., Burnout Risk flags, Performance Status mapping, and Compensation Tiers) at the database level.
+
+- **Advanced DAX:** Authored complex measures including:
+
+    - Regrettable Attrition: Filtering specifically for "Outstanding" performers who left.
+    
+    - Attrition Variance: Tracking performance against organizational benchmarks.
+    
+    - Top Talent Concentration: Measuring the density of high-performers across age demographics.
 
 ---
 
-## 📈 Key Insights
+## 📊 Key Insights & Business Impact
 
-* **Overtime Impact**: Employees working overtime show a significantly higher attrition rate (53.59%) compared to those who do not, suggesting burnout is a primary driver.
-* **Tenure Risk**: New hires (0-1 years) show the highest attrition density, highlighting the importance of the first-year onboarding experience.
-* **Work-Life Balance**: A clear correlation exists between balance ratings and retention; as ratings move from "Poor" to "Best," attrition drops significantly.
+- **Financial Leakage:** Identified a $7M replacement cost, with the Research & Development department accounting for nearly 50% of the total financial loss.
 
----
+- **The "Burnout" Smoking Gun:** Using the Overtime Slicer, I discovered that Regrettable Attrition % jumps from 16% to 35% when overtime is required, proving that workload is the primary driver for losing "Outstanding" talent.
 
-## 📂 Repository Structure
+- **Commute Vulnerability:** Sales Executives with long commutes represent the highest volume of attrition, suggesting a need for remote-work or travel-stipend interventions.
 
-* **`Assets/`**: High-resolution PNGs and Data Model architecture screenshots.
-* **`Report_and_Dashboard/`**: Full PDF report and the `.pbix` source file.
-* **`Source/`**: Raw IBM HR dataset used for the analysis.
-* **`Sql_Scripts/`**: T-SQL scripts used for data profiling and transformation logic.
+- **First-Year Risk:** Data indicates a significant "New Hire" attrition spike (40% in the first year), highlighting a need for improved onboarding and mentorship programs.
 
 ---
 
-### 💡 How to use this repository
-1. Download the `.pbix` file to explore the interactive DAX measures and data model.
-2. View the `03_Report_and_Dashboard` folder for a quick PDF overview of the findings.
-3. Review the `Sql_Scripts` to see the underlying data preparation.
+## 🛠️ Dashboard Features
 
-   ---
+- **Executive Overview:** High-level financials, Waterfall analysis of replacement costs, and talent loss vs. concentration.
+
+- **Workforce Profile:** Deep-dive into tenure, commute distance correlations, and age-based talent density heatmaps.
+
+- **Sentiment & Performance Analysis:** Diagnostic page linking Work-Life Balance and Job Satisfaction directly to attrition velocity.
+
+- **Interactive Navigation:** Fully customized Landing Page with sync-slicers and "Clear All" functionality for a seamless user experience.
+
+---
+
+## 🚀 How to Use
+
+- Open the .pbix file in Power BI Desktop.
+
+- Use the Home Page buttons to navigate through the three analytical chapters.
+
+- Utilize the Overtime Status and Department slicers to see how specific variables shift the attrition narrative
+
+---
+
+## Tools Used: 
+
+SQL (T-SQL), Power BI, DAX
