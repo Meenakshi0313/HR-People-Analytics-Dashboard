@@ -21,25 +21,25 @@ Click on any module below to view the high-resolution preview directly from the 
 
 | Module | Analytical Focus | High-Res Preview |
 | :--- | :--- | :--- |
-| **01. Home Page** | Global Navigation & Entry Point | [🖼️ View](./Assets/01_Home-Navigation.png) |
-| **02. Executive Overview** | C-Suite Financial & Pareto Health | [🖼️ View](./Assets/02_Executive-Overview.png) |
-| **03. Demographics Diversity** | Unit Contribution & Price Erosion | [🖼️ View](./Assets/03_Demographics_Diversity.png) |
-| **04. Sentiment Performance** | Demographic & Income Distribution | [🖼️ View](./Assets/04_Sentiment_Performance.png) |
+| **01. Home Page** | Global Navigation & Entry Point | [🖼️ View](Assets/01_Home_Navigation.png) |
+| **02. Executive Overview** | C-Suite Financial & Pareto Health | [🖼️ View](Assets/02_Executive_Overview.png) |
+| **03. Demographics Diversity** | Unit Contribution & Price Erosion | [🖼️ View](Assets/03_Demographics_Diversity.png) |
+| **04. Sentiment Performance** | Demographic & Income Distribution | [🖼️ View](Assets/04_Sentiment_Performance.png) |
 
 <details>
   <summary>📸 **Click here to expand and view all screenshots in-line**</summary>
 
   ### 01. Home Page
-  ![Home Navigation](./Assets/01_Home-Navigation.png)
+  ![Home Navigation](Assets/01_Home-Navigation.png)
 
   ### 02. Executive Overview
-  ![Executive Overview](./Assets/02_Executive-Overview.png)
+  ![Executive Overview](Assets/02_Executive-Overview.png)
 
   ### 03. Demographics Diversity
-  ![Demographics Diversity](./Assets/03_Demographics_Diversity.png)
+  ![Demographics Diversity](Assets/03_Demographics_Diversity.png)
 
   ### 04. Sentiment Performance
-  ![Sentiment Performance](./Assets/04_Sentiment_Performance.png)
+  ![Sentiment Performance](Assets/04_Sentiment_Performance.png)
   
 ---
 
