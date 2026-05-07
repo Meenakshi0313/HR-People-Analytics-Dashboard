@@ -30,10 +30,10 @@ Click on any module below to view the high-resolution preview directly from the 
   <summary>📸 **Click here to expand and view all screenshots in-line**</summary>
 
   ### 01. Home Page
-  ![Home Navigation](Assets/01_Home-Navigation.png)
+  ![Home Navigation](Assets/01_Home_Navigation.png)
 
   ### 02. Executive Overview
-  ![Executive Overview](Assets/02_Executive-Overview.png)
+  ![Executive Overview](Assets/02_Executive_Overview.png)
 
   ### 03. Demographics Diversity
   ![Demographics Diversity](Assets/03_Demographics_Diversity.png)
