@@ -42,6 +42,7 @@ Click on any module below to view the high-resolution preview directly from the 
   ![Sentiment Performance](Assets/04_Sentiment_Performance.png)
   
   </details>
+  
 ---
 
 ## 🏗️ Technical Architecture
