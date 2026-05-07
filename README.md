@@ -10,7 +10,7 @@ This project features a comprehensive 4-page Power BI dashboard designed to help
 
 * 📊 **[Download Power BI Dashboard (.pbix)](Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pbix)** - *Requires Power BI Desktop to view data model and DAX*
 * 📄 **[Download Project Summary (PDF)](Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pdf)** - *A comprehensive report of insights and methodology*
-* 💻 **[View SQL Scripts](Sql_Scripts/Gold_Layer_Views.sql)** - *Database views and transformation logic*
+* 💻 **[View SQL Scripts](Sql_Scripts/02_Gold_Reporting_Views.sql)** - *Database views and transformation logic*
 * 📁 **[Download Raw Dataset (.csv)](Source_Data/HR-Employee-Attrition.csv)**
 
   ---
@@ -42,7 +42,12 @@ I developed a robust **Star Schema** to optimize report performance and ensure d
 * **Fact Table**: `v_FactHRPerformance` containing core metrics.
 * **Dimension Tables**: `v_DimEmployeeDetails`, `v_DimJobDetails`, and `v_DimSatisfaction`.
 
-![Data Model](./Assets/Data-Model.png)
+<details>
+<summary>📸 Click here to view the Star Schema Diagram</summary>
+
+![Star Schema Data Model](Assets/Data-Model.png)
+
+</details>
 
 ### 2. Advanced DAX & Power Query
 * **Custom Sorting**: Solved alphabetical sorting issues for qualitative data (e.g., Work-Life Balance: Poor $\rightarrow$ Best) by creating a **Conditional Column Index** in Power Query to break circular dependencies.
