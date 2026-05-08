@@ -28,10 +28,10 @@ To ensure scalability and performance, I implemented a **Gold Layer** architectu
 
 | Module | Analytical Focus | High-Res Preview |
 | :--- | :--- | :--- |
-| **01. Home Page** | Global Navigation & Entry Point | [View Image](./images/home_page.png) |
-| **02. Executive Overview** | C-Suite Financials & Attrition Variance | [View Image](./images/executive_overview.png) |
-| **03. Demographics Diversity** | Tenure Risk & Commute Vulnerability | [View Image](./images/demographics.png) |
-| **04. Sentiment Performance** | Burnout Drivers & Top Talent Retention | [View Image](./images/sentiment.png) |
+| **01. Home Page** | Global Navigation & Entry Point | [View Image](./Assets/01_Home_Navigation.png) |
+| **02. Executive Overview** | C-Suite Financials & Attrition Variance | [View Image](./Assets/02_Executive_Overview.png) |
+| **03. Demographics Diversity** | Tenure Risk & Commute Vulnerability | [View Image](./Assets/03_Demographics_Diversity.png) |
+| **04. Sentiment Performance** | Burnout Drivers & Top Talent Retention | [View Image](./Assets/04_Sentiment_Performance.png) |
 
 ---
 
@@ -55,6 +55,6 @@ To ensure scalability and performance, I implemented a **Gold Layer** architectu
 **Role:** Data Analyst | SQL Engineering | Power BI Architecture
 
 
-## 🤝 Connect with me
+**🤝 Connect with me**
 [LinkedIn](https://linkedin.com) | [Portfolio Site](#)
 
