@@ -11,7 +11,7 @@ An enterprise-grade Business Intelligence and Data Engineering solution that tra
 
 Use the links below to instantly jump to specific project components, source scripts, and high-resolution deployment assets:
 
-* 📊 **[Power BI Dashboard File (.pbix):] (Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pbix)**
+* 📊 **[Power BI Dashboard File (.pbix)](Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pbix)**
 * 📄 **[Executive Summary Report (PDF)](Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pdf)**
 * 🗃️ **[Raw Transactional Dataset (CSV/XLSX)](Source_Data/HR-Employee-Attrition.csv)**
 * 🛠️ **[Database Engineering Scripts (SQL)](Sql_Scripts/02_Gold_Reporting_Views.sql)**
