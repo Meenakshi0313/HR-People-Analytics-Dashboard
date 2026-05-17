@@ -108,5 +108,7 @@ A deep-dive psychological behavioral matrix focusing on workplace cultural healt
 
 ---
 
-**Author: Meenakshi Singh** *Data Analyst | SQL Engineering | Power BI Architecture | Advanced Excel Dashboards* [LinkedIn](https://www.linkedin.com) | [GitHub Portfolio](https://github.com)
+**Author: Meenakshi Singh**
+*Data Analyst | SQL Engineering | Power BI Architecture | Advanced Excel Dashboards* 
+[LinkedIn](https://www.linkedin.com) | [GitHub Portfolio](https://github.com)
 
