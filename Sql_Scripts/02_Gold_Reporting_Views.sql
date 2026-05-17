@@ -26,8 +26,8 @@ SELECT
     EmployeeNumber AS [Employee Number],
     Attrition AS [Attrition Flag],
     CASE 
-        WHEN Attrition = 1 THEN 'Yes'
-        ELSE 'No'
+        WHEN Attrition = 1 THEN 'Left'
+        ELSE 'Stayed'
     END AS [Attrition Status],
     MonthlyIncome AS [Monthly Income],
     CASE 
@@ -46,12 +46,19 @@ SELECT
     END AS [Income Band Sort],
     PercentSalaryHike AS [Salary Hike %],
     PerformanceRating AS [Performance Score],
+    CASE 
+        WHEN PerformanceRating = 1 THEN 'Low'
+        WHEN PerformanceRating = 2 THEN 'Good'
+        WHEN PerformanceRating = 3 THEN 'Excellent' 
+        WHEN PerformanceRating = 4 THEN 'Outstanding'
+        ELSE 'N/A'
+    END AS [Performance Status],
     YearsAtCompany AS [Tenure Years],
     CASE
-        WHEN YearsAtCompany < 1 THEN '0-1 Years (New Hire)'
-        WHEN YearsAtCompany <= 3 THEN '1-3 Years'
-        WHEN YearsAtCompany <= 5 THEN '3-5 Years'
-        WHEN YearsAtCompany <= 10 THEN '5-10 Years'
+        WHEN YearsAtCompany < 1 THEN 'New Hire (<1yr)'
+        WHEN YearsAtCompany <= 3 THEN 'Junior (1-3yrs)'
+        WHEN YearsAtCompany <= 5 THEN 'Mid (3-5yrs)'
+        WHEN YearsAtCompany <= 10 THEN 'Senior (5-10yrs)'
         ELSE '10+ Years (Veteran)'
     END AS [Tenure Band],
     CASE
@@ -63,7 +70,8 @@ SELECT
 END AS [Tenure Band Sort],
     YearsSinceLastPromotion AS [Years Since Promotion],
     NumCompaniesWorked AS [Companies Worked],
-    TotalWorkingYears AS [Total Experience]
+    TotalWorkingYears AS [Total Experience],
+    (TotalWorkingYears - YearsAtCompany) AS [Prior Experience]
 FROM silver.hr_attrition;
 GO
 
@@ -109,19 +117,7 @@ SELECT
     CASE 
         WHEN DistanceFromHome <= 10 THEN 1 
         ELSE 2 
-    END AS [Commute Type Sort]
-FROM silver.hr_attrition;
-GO
-
--- =============================================================================
--- 3. Dimension: v_DimJobDetails 
--- =============================================================================
-
-IF OBJECT_ID('v_DimJobDetails', 'V') IS NOT NULL DROP VIEW v_DimJobDetails;
-GO
-CREATE OR ALTER VIEW v_DimJobDetails AS
-SELECT 
-    EmployeeNumber AS [Employee Number],
+    END AS [Commute Type Sort],
     Department,
     JobRole AS [Job Role],
     JobLevel AS [Job Level],
@@ -131,19 +127,6 @@ SELECT
         WHEN OverTime = 1 THEN 'Yes' 
         ELSE 'No' 
     END AS [Overtime Status],
-    StandardHours AS [Standard Hours]
-FROM silver.hr_attrition;
-GO
-
--- =============================================================================
--- 4. Dimension: v_DimSatisfaction 
--- =============================================================================
-
-IF OBJECT_ID('v_DimSatisfaction', 'V') IS NOT NULL DROP VIEW v_DimSatisfaction;
-GO
-CREATE OR ALTER VIEW v_DimSatisfaction AS
-SELECT 
-    EmployeeNumber AS [Employee Number],
     JobSatisfaction AS [Job Satisfaction],
     CASE 
         WHEN JobSatisfaction = 1 THEN 'Low'
@@ -173,6 +156,19 @@ SELECT
         WHEN WorkLifeBalance = 4 THEN 'Best'
     END AS [Work Life Balance Status],
     JobInvolvement AS [Job Involvement Score],
-    StockOptionLevel AS [Stock Option Level]
+    CASE 
+        WHEN JobInvolvement = 1 THEN 'Low'
+        WHEN JobInvolvement = 2 THEN 'Medium'
+        WHEN JobInvolvement = 3 THEN 'High'
+        WHEN JobInvolvement = 4 THEN 'Very High'
+    END AS [Job Involvement Status],
+    StockOptionLevel AS [Stock Option Level],
+    CASE 
+        WHEN StockOptionLevel = 0 THEN 'None'
+        WHEN StockOptionLevel = 1 THEN 'Basic'
+        WHEN StockOptionLevel = 2 THEN 'Standard'
+        WHEN StockOptionLevel = 3 THEN 'Executive'
+        ELSE 'N/A'
+    END AS [Stock Option Tier]
 FROM silver.hr_attrition;
 GO
