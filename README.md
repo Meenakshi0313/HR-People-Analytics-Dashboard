@@ -11,10 +11,10 @@ An enterprise-grade Business Intelligence and Data Engineering solution that tra
 
 Use the links below to instantly jump to specific project components, source scripts, and high-resolution deployment assets:
 
-* **📊 Power BI Dashboard File (.pbix):** (Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pbix)
-* **📄 Executive Summary Report (PDF):** (Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pdf)
-* **🗃️ Raw Transactional Dataset (CSV/XLSX):** (Source_Data/HR-Employee-Attrition.csv)
-* **🛠️ Database Engineering Scripts (SQL):** (Sql_Scripts/02_Gold_Reporting_Views.sql)
+* 📊 **[Power BI Dashboard File (.pbix):] (Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pbix)**
+* 📄 **[Executive Summary Report (PDF)](Report_and_Dashboard/IBM_HR_Analytics_Strategic_Dashboard.pdf)**
+* 🗃️ **[Raw Transactional Dataset (CSV/XLSX)](Source_Data/HR-Employee-Attrition.csv)**
+* 🛠️ **[Database Engineering Scripts (SQL)](Sql_Scripts/02_Gold_Reporting_Views.sql)**
 
 ---
 
@@ -38,11 +38,11 @@ Click on any module below to view the high-resolution preview directly from the 
 
 | Module | Analytical Focus | High-Res Preview |
 | :--- | :--- | :--- |
-| **01. Home Page** | Global Navigation & Entry Point | [🖼️ View](./Assets/01_Home Page.png) |
-| **02. Executive Overview** | C-Suite Financial & Pareto Health | [🖼️ View](./Assets/02_Executive Overivew.png) |
-| **03. Demographic & Diversity** | Unit Contribution & Price Erosion | [🖼️ View](./Assets/03_Demographics & Diversity.png) |
-| **04. Performance & Reward Analysis** | Demographic & Income Distribution | [🖼️ View](./Assets/04_Performance & Reward.png) |
-| **05. Employee Sentiment & Workplace Risk** | Freight Ratios & Supply Velocity | [🖼️ View](./Assets/05_Sentiment & Workplace.png) |
+| **01. Home Page** | Global Navigation & Entry Point | [🖼️ View](./Assets/01_Home_Page.png) |
+| **02. Executive Overview** | C-Suite Financial & Pareto Health | [🖼️ View](./Assets/02_Executive_Overivew.png) |
+| **03. Demographic & Diversity** | Unit Contribution & Price Erosion | [🖼️ View](./Assets/03_Demographics_&_Diversity.png) |
+| **04. Performance & Reward Analysis** | Demographic & Income Distribution | [🖼️ View](./Assets/04_Performance_&_Reward.png) |
+| **05. Employee Sentiment & Workplace Risk** | Freight Ratios & Supply Velocity | [🖼️ View](./Assets/05_Sentiment_&_Workplace.png) |
 
 
 ### 1. Executive Navigation Portal (Home Page)
