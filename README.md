@@ -1,7 +1,7 @@
 # IBM HR Analytics: Strategic Workforce Insights Dashboard
 
 
-## Project Overivew
+## Project Overview
 
 An enterprise-grade Business Intelligence and Data Engineering solution that transforms raw, flat HR transactional data into a highly optimized, interactive 5-page Power BI Executive Suite. This project showcases end-to-end data professional capabilities, spanning from **T-SQL database normalization and view engineering** to **dimensional modeling, business analytics, and executive UI/UX design**.
 
