@@ -41,8 +41,8 @@ Click on any module below to view the high-resolution preview directly from the 
 | **01. Home Page** | Global Navigation & Entry Point | [🖼️ View](./Assets/01_Home_Page.png) |
 | **02. Executive Overview** | C-Suite Financial & Pareto Health | [🖼️ View](./Assets/02_Executive_Overivew.png) |
 | **03. Demographic & Diversity** | Unit Contribution & Price Erosion | [🖼️ View](./Assets/03_Demographics_&_Diversity.png) |
-| **04. Performance & Reward Analysis** | Demographic & Income Distribution | [🖼️ View](./Assets/04_Performance_&_Reward.png) |
-| **05. Employee Sentiment & Workplace Risk** | Freight Ratios & Supply Velocity | [🖼️ View](./Assets/05_Sentiment_&_Workplace.png) |
+| **04. Performance & Reward** | Demographic & Income Distribution | [🖼️ View](./Assets/04_Performance_&_Reward.png) |
+| **05. Sentiment & Workplace Risk** | Freight Ratios & Supply Velocity | [🖼️ View](./Assets/05_Sentiment_&_Workplace.png) |
 
 
 ### 1. Executive Navigation Portal (Home Page)
@@ -52,7 +52,7 @@ The suite opens to a high-end landing portal designed to establish immediate vis
   * Employs a cohesive dark mode interface utilizing clear neon bounding borders to reduce visual friction.
   * Explicit user prompts (*"Ctrl + Click a category to begin your analysis"*) to guide technical desktop reviewers seamlessly.
 
-### 2. Executive Overview Dashboard
+### 2. Executive Overview
 The macro-level nerve center of the application, providing executive stakeholders with a cross-functional breakdown of organizational health, compensation baselines, and retention metrics.
 * **Business Objective:** Offer immediate visibility into critical C-suite KPIs while establishing a clear baseline for deeper behavioral analysis.
 * **Core Analytics & Visuals:**
@@ -61,7 +61,7 @@ The macro-level nerve center of the application, providing executive stakeholder
   * **Compensation vs. Longevity Correlation:** A high-density scatter plot mapping monthly income directly against employee tenure years, color-coded by attrition status to reveal systemic departure zones.
   * **Turnover & Equity Snapshots:** Donut and horizontal bar charts isolating departmental turnover concentration and performance-based compensation equity.
 
-### 3. Workforce Profile & Diversity Deep-Dive
+### 3. Demographic & Diversity 
 A granular operational matrix focused on structural demographics, equity compliance metrics, and lifestyle attrition drivers across the talent pipeline.
 * **Business Objective:** Uncover underlying systemic risks related to employee commute burdens, gender pay equality, and work-life distribution.
 * **Core Analytics & Visuals:**
@@ -70,7 +70,7 @@ A granular operational matrix focused on structural demographics, equity complia
   * **The Commute Correlation:** A trended column chart tracking turnover risk percentage against raw distance from home, mathematically modeling the negative retention impact of extensive travel times with a centralized trendline.
   * **Operational Overtime Exposure:** A stacked horizontal bar chart breaking down overtime utilization across marital cohorts to isolate burnout risks.
 
-### 4. Performance & Reward Analysis
+### 4. Performance & Reward 
 A specialized financial and talent optimization matrix designed to evaluate corporate total rewards strategies, compensation distribution equity, and performance incentives.
 * **Business Objective:** Analyze whether historical salary increases, promotional frequencies, and equity packages successfully retain high-performing individuals and critical operational personnel.
 * **Core Analytics & Visuals:**
@@ -79,7 +79,7 @@ A specialized financial and talent optimization matrix designed to evaluate corp
   * **Promotional Velocity Bottlenecks:** A horizontal bar chart isolating the average time employees wait for promotions across major corporate business units.
   * **The "Golden Handcuffs" Matrix:** A cross-tabulated heatmap matrix intersecting job roles against long-term Stock Option Tiers (None, Basic, Standard, Executive) to track live attrition gaps.
 
-### 5. Employee Sentiment & Workplace Risk
+### 5. Sentiment & Workplace Risk
 A deep-dive psychological behavioral matrix focusing on workplace cultural health, leadership tenure stability, and early-tenure burnout vulnerabilities.
 * **Business Objective:** Diagnose the soft risks within the company culture, tracking how manager changes, satisfaction scores, and over-utilization drive rapid voluntary departures.
 * **Core Analytics & Visuals:**
