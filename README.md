@@ -25,6 +25,9 @@ To implement formal data warehousing practices from a flat-file source, the data
 * **Central Fact Table (`FactHRPerformance`):** Stores core operational, quantitative metrics, transaction keys, and performance tracking attributes.
 * **Master Dimension Table (`v_DimEmployeeDetails`):** Houses all core descriptive employee profiles, workplace sentiment scores, job roles, and demographics.
 
+### 🖼️ Schema Architecture
+![HR Attrition Analytics Dimensional Model](./Assets/06_Data_Model.png)
+
 ### 🔌 Relationship Logic:
 * `v_DimEmployeeDetails[EmployeeNumber]` ↔️ `FactHRPerformance[EmployeeNumber]` ($1:1$)
 
@@ -38,11 +41,11 @@ Click on any module below to view the high-resolution preview directly from the 
 
 | Module | Analytical Focus | High-Res Preview |
 | :--- | :--- | :--- |
-| **01. Home Page** | Global Navigation & Entry Point | [🖼️ View](./Assets/01_Home_Page.png) |
-| **02. Executive Overview** | C-Suite Financial & Pareto Health | [🖼️ View](./Assets/02_Executive_Overivew.png) |
-| **03. Demographic & Diversity** | Unit Contribution & Price Erosion | [🖼️ View](./Assets/03_Demographics_&_Diversity.png) |
-| **04. Performance & Reward** | Demographic & Income Distribution | [🖼️ View](./Assets/04_Performance_&_Reward.png) |
-| **05. Sentiment & Workplace Risk** | Freight Ratios & Supply Velocity | [🖼️ View](./Assets/05_Sentiment_&_Workplace.png) |
+| **01. Home Page** | Acts as a centralized navigation hub segmenting user exploration across 4 core operational pillars. | [🖼️ View](./Assets/01_Home_Page.png) |
+| **02. Executive Overview** | Monitors cross-functional organizational health, core headcount KPIs, and high-level attrition concentrations. | [🖼️ View](./Assets/02_Executive_Overivew.png) |
+| **03. Demographic & Diversity** | Examines employee distance from home, academic backgrounds, and overtime exposure across demographic cohorts. | [🖼️ View](./Assets/03_Demographics_&_Diversity.png) |
+| **04. Performance & Reward** | Evaluates training investment payoffs, promotional frequencies, and retention risks via stock equity tracking.| [🖼️ View](./Assets/04_Performance_&_Reward.png) |
+| **05. Sentiment & Workplace Risk** | Diagnoses workplace culture health by tracking turnover velocity against supervisor changes and job satisfaction. | [🖼️ View](./Assets/05_Sentiment_&_Workplace.png) |
 
 
 ### 1. Executive Navigation Portal (Home Page)
